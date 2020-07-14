@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "bdb"
+    }
+  },
+  "defaultProject": "bdb",
+  "cli": {
+    "analytics": false
+  }
 }
