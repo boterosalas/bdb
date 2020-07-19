@@ -1,0 +1,15 @@
+<div class="col-lg-4 col-md-6 portfolio-item filter-{{ memoria.filtro | lowercase }}">
+    <div class="portfolio-wrap">
+        <img src="{{ memoria.imagen }}" class="img-fluid" alt="">
+        <div class="portfolio-info">
+            <h4>{{ memoria.titulo }}</h4>
+            <p>{{ memoria.filtro }}</p>
+            <div class="portfolio-links">
+                <a href="{{ memoria.imagen }}" data-gall="portfolioGallery" class="venobox"
+                    title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe"
+                    class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Memoria } from '../../interfaces/memoria';
+import { MemoriaService } from '../../servicios/memoria.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-memorias',
@@ -7,9 +10,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MemoriasComponent implements OnInit {
 
-  constructor() { }
+  memorias : Memoria[];
+
+  constructor(
+    private _memoriaService: MemoriaService,
+    private _router: Router
+  ) { }
 
   ngOnInit(): void {
+    this.memorias = this._memoriaService.getMemorias()
   }
 
 }
